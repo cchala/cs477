@@ -4,7 +4,7 @@
 
 setTimeout is a callback function that called after a delay time has finished and 
 a callback queue is in timer phase.  It will stay in the queue until the call stack is idle. 
-It will execute(setTimeout(,0) before setImmediate and after process.next function executed.
+It will execute(setTimeout(,0) after process.next function executed.
 
 setImmediate is a callback function on a check phase.
  It checks queue of I/O event handlers. 
@@ -20,14 +20,14 @@ setImmediate is a callback function on a check phase.
  This callback runs without any limit until the queue is empty. 
  So process.nextTick executes immediately after the current function completes.
 
-Whereas, Setimmediate callback function run from check queue 
+Whereas, SetImmediate callback function run from check queue 
 after I/O event callbacks that already in the event queue. 
 It will wait the event loop visit the queue.
 
 //Name 10 global modules/methods available in Node environment.
-1.Buffer 
+1. Buffer 
 2. console
-3.process
+3. process
 4. global 
 5. setImmediate() method.
 6. setInterval() method
