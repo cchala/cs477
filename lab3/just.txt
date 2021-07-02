@@ -1,1 +1,1 @@
-hello the other world of my world
+course1,node and course2,clode
