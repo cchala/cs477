@@ -23,7 +23,23 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" id="login-div">
+
+        <form id="login-form">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <button type="submit" class="btn btn-primary" id="login-btn">Submit</button>
+        </form>
+        <div id="error-msg" class="warning"></div>
+
+    </div>
+    <div class="container" id="product-container">
         <div>
             <h1>Books List</h1>
         <table class="table">
@@ -41,6 +57,7 @@
             </tbody>
           </table>
         </div>
+        <!-- <div class="container" id="product-container"></div> -->
         <h1 id="add-forms">Add a Books</h1>
         <form id="idfrom">
             <div class="mb-3">
@@ -60,7 +77,8 @@
                 <input type="text" class="form-control" id="author">
             </div>
             <button type="submit" class="btn btn-primary" id="addBtn">Submit</button>
-        </form>
+        </form><br>
+        <button id="logout-btn">Logout</button>
     </div>
 </body>
 

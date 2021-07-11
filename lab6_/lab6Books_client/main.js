@@ -76,7 +76,6 @@ window.onload = function () {
         } else {
             createNewBook()
         }
-
     }
 }
 function createNewBook() {
@@ -106,8 +105,6 @@ function createNewBook() {
 
         })
 }
-
-
 async function fetchAllBooks() {
     const books = await (await fetch('http://localhost:3000/books', {
         headers: { 'Authorization': "Bearer " + sessionStorage.getItem('accessToken') }
@@ -119,7 +116,6 @@ async function fetchAllBooks() {
     });
 
 }
-
 function attachSingleBook(parentNode, book) {
     const tr = document.createElement('tr')
 
@@ -178,7 +174,5 @@ function attachSingleBook(parentNode, book) {
                 document.getElementById('author').value = book.author;
             })
     })
-
-
     parentNode.appendChild(tr)
 }
